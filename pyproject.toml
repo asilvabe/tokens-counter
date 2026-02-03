@@ -1,0 +1,16 @@
+[project]
+name = "tokens-counter"
+version = "0.1.0"
+description = "Contador de tokens para archivos PDF"
+requires-python = ">=3.10"
+dependencies = [
+    "tiktoken>=0.5.0",
+    "PyMuPDF>=1.22.0",
+]
+
+[project.scripts]
+tokens-counter = "tokens_counter.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
